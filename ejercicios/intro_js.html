@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro JavaScript</title>
+
+
+</head>
+<body>
+<input type="text" id="entrada">
+<button  id="mi_boton">
+    Click Aqui
+</button>
+
+    <!-- <h2>ejemplos en JavaScript</h2>
+    
+    <h1 id="uno">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, beatae vero maxime ad minima qui blanditiis. Architecto temporibus exercitationem porro dolorum, facere magnam aperiam quos adipisci quam mollitia nesciunt facilis.</h1>
+    <h1 class = "titulo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, beatae vero maxime ad minima qui blanditiis. Architecto temporibus exercitationem porro dolorum, facere magnam aperiam quos adipisci quam mollitia nesciunt facilis.</h1>
+    <h1> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, beatae vero maxime ad minima qui blanditiis. Architecto temporibus exercitationem porro dolorum, facere magnam aperiam quos adipisci quam mollitia nesciunt facilis.</h1>
+    <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, beatae vero maxime ad minima qui blanditiis. Architecto temporibus exercitationem porro dolorum, facere magnam aperiam quos adipisci quam mollitia nesciunt facilis.</h1>
+    <h1 class  ="titulo ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, beatae vero maxime ad minima qui blanditiis. Architecto temporibus exercitationem porro dolorum, facere magnam aperiam quos adipisci quam mollitia nesciunt facilis.</h1>
+    <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, beatae vero maxime ad minima qui blanditiis. Architecto temporibus exercitationem porro dolorum, facere magnam aperiam quos adipisci quam mollitia nesciunt facilis.</h1>
+ -->
+
+    <script>
+        // var edad=window.prompt("introduzca la edad"); //entero a variable edad
+         //var nombre=window.prompt("ingrese su nombre:"); //una cadena a variable nombre
+         //var saludo='Hola '+nombre+' tu edad es de ' +edad; //concateniacion de cadenas
+        // alert(saludo);
+     
+        // console.log(saludo);
+         //console.log("El saludo tiene una longitud de: "+saludo.length);
+     
+         //REPASO DE OPERACIONES
+     //     var x=23;
+     //     var y=12;
+     //     //operaciones aritemticas
+     //     var z = x+y; //suma
+     //     z=x-y;    //resta
+     //     z=x*y;  //multiplicacion 
+     //     z=x**z;  //exponencial
+     //     z=x/y;  //division
+     //     z=x%y;  //modulo
+     //     x++;    //incrementa en 1 el valor de x
+     //     y--;    //decrementa en1 el valor de Y
+     
+     //     console.log("El resultado de la suma es " + x);
+     
+     //     //arrays
+     //     //var nombres=['Juan', 'Gabriel', 'Hugo']; //primera forma de declaracion
+     //     //console.log("El arrays con valores es " + nombres[0]);
+     
+     //     //SEGUNDA FORMA 
+     //     var nombres=[];
+     //     nombres[0]='Juan';
+     //     nombres[1]='Alberto';
+     //     nombres[2]='Jose';
+     //     nombres[3]='Esteban';
+     //     //TERCERA FORMA
+     //    // var nombres=new Array(20);
+     //     console.log(nombres);
+     
+         //condicionales
+         /*if(x > y){
+             console.log('X es mayor');
+         }else{
+             console.log('Y es mayor');
+         }*/
+     
+         //iteracion con FOR
+     //    for(var i=0; i<nombres.length;i++){
+     //         console.log(nombres[i]);
+     //         i=i+1;
+     //     }
+     /////Ctrl + k+ c   comentar
+     ///Ctrl + k+u para descomentar
+         //while
+        /* var i=0;
+         while(i<nombres.length){
+             console.log(nombres[i]);
+             i++;
+     
+         }*/
+     
+     /*
+     Funciones 
+     */
+     // function saludar(){
+     //     console.log("Hola Mundo");
+     // }
+     
+     // saludar();
+     
+     // var sumar=function(a,b){
+     //     var x=a+b;
+     //     console.log("el resultado es " + x)
+     // }
+     
+     // sumar(3,4);
+     //ambitos variables
+     // var a="esta es una A afuera";
+     // if(true){
+     //     var a="esta es una A adentro";
+     //     console.log(a);
+     // }
+     // console.log(a);
+     
+     //utilizando LET
+     // let a="Esta es una A afuera"
+     // if(true){
+     // let a="Esta es una A adentro";
+     // console.log(a);
+     
+     // }
+     // // console.log(a);
+     
+     
+     // /*OBJETO*/
+     // var coche1 = new Object();
+     // coche1.color = "rojo";
+     // coche1.marca="toyota";
+     // coche1.arrancar=function(){
+     //     console.log("Arrancando coche 1");
+     // }
+     
+     // console.log(coche1.color);
+     // console.log(coche1.marca);
+     // coche1.arrancar();
+     
+     // var coche2 = {
+     //     color: "verde",
+     //     marca: "Ford",
+     //     arrancar : function(){
+     //         console.log("Arrancando el coche 2");
+     //     }
+     // }
+     
+     // console.log(coche2.color);
+     // console.log(coche2.marca);
+     // coche2.arrancar();
+     
+     /*DOM SCRIPTING*/
+     /*SELECTORES EN JAVASCRIPT*/
+
+     //por ID
+    //  var x = document.getElementById('uno');
+    //  x.innerHTML;
+    //  console.log(x);
+
+    //  var y =document.getElementsByClassName('titulo');
+    //  console.log(y);
+    //  var z = document.getElementsByTagName('h1');
+    // console.log(z);
+    // var a = document.querySelector('#uno');
+    // console.log(a);
+    // var b = document.querySelectorAll('.titulo');
+    // console.log(b);
+
+
+    // //iterando sobre la coleccion de nodos (objetos) y
+    // for (var i=0; i<y.length; i++){
+    //     console.log(y[i].innerHTML);
+    // }
+
+
+
+/*
+evento en js
+*/
+
+document.getElementById('mi_boton').addEventListener("click" , function(){
+    //intrucciones
+    console.log("El usuario ha hecho un click");
+});
+
+     </script>
+
+</body>
+</html>

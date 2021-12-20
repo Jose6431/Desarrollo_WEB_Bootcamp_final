@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/brands.min.css">
+    <link rel="stylesheet" href="../assets/css/fontawesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/app.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <title>Vista Adminitrados </title>
+
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo">
+            <img class="menu_logo" src="../assets/img/logo2.png" alt="logo de mi blog" width="250px">
+
+        </div>
+        <div>
+            <ul class="top_menu">
+                <li>
+                    <a href="#">
+                        <i class="fas fa-home"></i> Inicio
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+
+
+        <div>
+            <a href="#" class="btn" id="btn_user">
+                <i class="fas fa-envelope"></i> usuario: Nombre
+            </a>
+            <div id="user_menu">
+                <div class="lista_barra">
+                    <ul>
+                        <li><a href="#">Ver perfil</a></li>
+                        <li><a href="#">Actualizar contraseña</a></li>
+                        <li><a href="#">Cerrar </a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="contenedor_39">
+        <div class="barra_lateral">
+            <div class="lista_barra">
+                <h1>
+                    Modulos
+                </h1>
+                <ul>
+                    <li><a href="#">Administrar articulos</a></li>
+                    <li><a href="#">Administrar hoja de vida</a></li>
+                    <li><a href="#">Administrar proyectos </a></li>
+                    <li><a href="#">Administrar contacto</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="contenedor_principal">
+            <h1>
+                Nuevo Registro
+            </h1>
+            Contenido de la pagina en particular
+        </div>
+    </div>
+
+
+    <div class="contenedor_pie">
+        <div class="contenedor_2filas">
+            <div class="pie">
+                &copy; 2021 Blog personal de Jose Luis. Todos los derechos reservados
+            </div>
+        </div>
+    </div>
+    <script>
+        var btn_user = document.getElementById('btn_user');
+        btn_user.addEventListener('click', function() {
+            var user_menu = document.getElementById('user_menu');
+            if (user_menu.style.visibility == "visible") {
+                user_menu.style.visibility = "hidden";
+            } else {
+                user_menu.style.visibility = "visible";
+            }
+        });
+    </script>
+
+</body>
+
+</html>

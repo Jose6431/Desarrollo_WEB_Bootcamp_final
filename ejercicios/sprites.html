@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio de Sprites</title>
+    <style>
+        .social_bar{
+            position: relative;
+        }
+        .social_bar li{
+            margin:0;
+            padding: 0;
+            list-style: none;
+            position: absolute;
+            top: 0;
+
+        } 
+
+        .social_bar li, .social_bar a{
+            height: 190px;
+            display: block;
+            border: 1px solid #ccc;
+        }
+        #facebook{
+            left: 0;
+            width: 50px;
+            background: url('../WEB/image/redes.png')0 0;
+
+        }
+
+        #youtube{
+            left: 200px;
+            width: 190px;
+            background: url('../WEB/image/redes.png')-191 0;
+
+        }
+
+
+
+    </style>
+
+</head>
+<body>
+    <h2>Redes Sociales</h2>
+    <ul class="social_bar">
+        <li id="facebook"> <a href="#">A</a></li>
+        <li id="youtube"><a href="#">B</a></li>
+        <li id="linkedin"><a href="#">C</a></li>
+    </ul>
+    
+</body>
+</html>

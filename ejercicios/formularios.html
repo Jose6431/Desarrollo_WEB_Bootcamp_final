@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <!--form action se direcciona a donde apuntara el formulario, a un doc php, ejemplo-->
+    <!--POST PARA ENVIAR DATOS, GET PARA SOLLICITAR DATOS-->
+<form action="http:/www.mipagina.com/ruta/procesador.php" method="post">
+<h2>formulario de Registro de Usuarios</h2>
+    <label for="per_nombres">Nombres del Cliente:</label>
+    <input name="per_nombres" type="text" placeholder="Escriba sus nombres">
+<br>
+<label for="per:email">Email de Usuario</label>
+<input type="email" name="per_email" id="per_email">
+
+    
+    <br>
+
+    <label for=""per_fecha_nacimiento>Fecha de nacimiento</label>
+    <input type="date" name="per_fecha_nacimiento" id="per_fecha_nacimiento">
+    <br>
+
+    <label for="per_genero">Genero</label>
+    <select name="per_genero" id="per_genero">
+       <option value="">Seleccione una opcion</option>
+        <option value="0" selected> Masculino</option>
+        <option value="1">Femenino</option>
+        <label for="per_descripcion">Descripcion de la persona</label>
+        <textarea name="" id="" cols="30" rows="10">Este texto es la descripcion de la persona</textarea>
+    </select>
+    <br>
+<label for="per_redes">Cuentas de Redes Sociales</label>
+<!--per_redes=[0,1,2,3]-->
+<select name="per_redes[]" id="per_redes" multiple>
+<option value="">Seleccione una o varias opciones</option>
+<option value="0">google</option>
+<option value="1">Facebook</option>
+<option value="2">Youtube</option>
+<option value="3">Twitter</option>
+</select>
+<br>
+<input type="hidden" name="per_ciudad" id="per_ciudad" value="El Alto">    
+<input type="button" value="enviar datos 1">
+
+    <input type="submit" value="enviar dato 2">
+    <button type="submit">Enviar datos 3</button>
+</form>
+
+</body>
+</html>
